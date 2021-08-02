@@ -24,6 +24,7 @@
     <modules>
         <module>all</module>
         <module>core</module>
+        <!--<module>core.thirdparty</module> -->
         <module>ui.frontend</module>
         <module>ui.apps</module>
         <module>ui.content</module>
@@ -34,7 +35,7 @@
 
     <properties>
         <aem.host>localhost</aem.host>
-        <aem.port>4502</aem.port>
+        <aem.port>1304</aem.port>
         <aem.publish.host>localhost</aem.publish.host>
         <aem.publish.port>4503</aem.publish.port>
         <sling.user>admin</sling.user>
@@ -682,6 +683,30 @@
                 <version>1.0.1</version>
                 <scope>test</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.auth/google-auth-library-oauth2-http -->
+            <dependency>
+                <groupId>com.google.auth</groupId>
+                <artifactId>google-auth-library-oauth2-http</artifactId>
+                <version>0.27.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-calendar -->
+            <dependency>
+                <groupId>com.google.apis</groupId>
+                <artifactId>google-api-services-calendar</artifactId>
+                <version>v3-rev411-1.25.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+            <!-- <dependency>
+                <groupId>com.google.api-client</groupId>
+                <artifactId>google-api-client</artifactId>
+                <version>1.32.1</version>
+            </dependency> -->
+            <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client-gson -->
+            <!-- <dependency>
+                <groupId>com.google.api-client</groupId>
+                <artifactId>google-api-client-gson</artifactId>
+                <version>1.32.1</version>
+            </dependency> -->
         </dependencies>
     </dependencyManagement>
 
