@@ -198,15 +198,14 @@ Bundle-DocURL:
             <groupId>com.google.apis</groupId>
             <artifactId>google-api-services-calendar</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
-        <!-- <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client</artifactId>
-        </dependency> -->
-        <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client-gson -->
-        <!-- <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client-gson</artifactId>
-        </dependency> -->
+        <dependency>
+	            <groupId>com.google.api-client</groupId>
+	            <artifactId>google-api-client</artifactId>
+	    </dependency>
+	    <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client-gson -->
+	    <dependency>
+	            <groupId>com.google.api-client</groupId>
+	            <artifactId>google-api-client-gson</artifactId>
+	    </dependency>
     </dependencies>
 </project>
