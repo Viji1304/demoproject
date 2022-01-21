@@ -1,3 +1,4 @@
+/*
 package com.aem.demoproject.core.servlets;
 
 import java.io.FileInputStream;
@@ -55,7 +56,9 @@ public class GoogleCalendarServlet extends SlingAllMethodsServlet {
 			calendarClient = new Calendar.Builder(new NetHttpTransport(), new GsonFactory(), requestInitializer)
 					.build();
 
-			/* Dummy Event Details - Start */
+			*/
+/* Dummy Event Details - Start *//*
+
 			Event event = new Event().setSummary("Google Calendar API Integration")
 					.setLocation("800 Howard St., San Francisco, CA 94103")
 					.setDescription("A chance to hear more about Google's Calendar API integration.");
@@ -74,7 +77,9 @@ public class GoogleCalendarServlet extends SlingAllMethodsServlet {
 			EventDateTime end = new EventDateTime().setDateTime(endDateTime).setTimeZone("America/Los_Angeles");
 			event.setEnd(end);
 			
-			/* Dummy Event Details - End */
+			*/
+/* Dummy Event Details - End *//*
+
 			
 			event = calendarClient.events().insert(calendarId, event).execute();
 			LOG.info("Event HTML Link={}", event.getHtmlLink());
@@ -85,3 +90,4 @@ public class GoogleCalendarServlet extends SlingAllMethodsServlet {
 
 	}
 }
+*/
